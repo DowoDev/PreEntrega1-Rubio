@@ -3,6 +3,7 @@ import './Qinqela.css';
 import Card from './components/Card';
 import CartWidget from './components/CartWidget';
 import NavBar from './components/NavBar';
+import ItemListContainer from './components/itemListContainer/ItemListContainer';
 
 function Qinqela() {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -29,6 +30,9 @@ function Qinqela() {
       <div className='arrow'>
        <a href="#" title="Back to Top"><img src="./src/assets/logos/up-arrow-alt-regular-24.png" alt="" />UP</a>
       </div>
+
+      <ItemListContainer/>
+      <br />
       <div className='container'>
         <h1 className='big'>Te ofrecemos la mejor calidad en productos. <strong className='yellow'>Disfrutalos!</strong></h1>
         <br />

@@ -23,9 +23,13 @@
   height: 5.3125rem;
   display: flex;
   align-items: center;
+  position: absolute;
+  left: 41px;
+  width: fit-content;
 }
 .logos{
   cursor: pointer;
+  
 }
 
 .marca {
@@ -42,6 +46,28 @@
   filter: invert(0);
   transition: all 0.5s;
 }
+.greeting h1 {
+  color: #ededed;
+  text-align: left;
+  position: relative;
+  width: fit-content;
+  left: 50px;
+  font-weight: 600;
+  font-size: 2.8125rem;
+  filter: drop-shadow(1px 3px 1px #202020);
+  transition: all 0.5s;
+}
+.greeting h3 {
+  color: #ededed;
+  text-align: left;
+  position: relative;
+  width: fit-content;
+  left: 50px;
+  font-weight: 600;
+  font-size: 2rem;
+  filter: drop-shadow(1px 3px 1px #202020);
+  transition: all 0.5s;
+}
 
 .big {
   font-size: 2.4rem;
@@ -49,7 +75,7 @@
   color: #ededed;
   position: relative;
   text-align: center;
-
+  filter: drop-shadow(1px 3px 1px #202020);
 }
 
 .bigProd {
@@ -65,7 +91,6 @@
   color: #FFC500;
   font-weight: 600;
   transition: all 0.5s;
-
 }
 
 .strong {
@@ -86,26 +111,26 @@
   align-items: center;
   justify-items: center;
   font-size: 1.25rem;
-  width: 70%;
+  width: 85%;
+  height: 50px;
   font-weight: 600;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #ededed;
   border-radius: 3px;
   border: 0;
   background-color: #ff3856;
-  box-shadow: #c92e46  0px 4px 1px 1px;
+  box-shadow: #c92e465e 0px 1px 0px 3px;
   cursor: pointer;
   filter: drop-shadow(0px 1px 2px #c92e46);
   transition: all .3s ease;
 
 }
 .botonCompra:active {
-  background-color: rgb(255, 56, 86);
-  font-size: 19px;
-  font-weight: 600;
+  background-color: rgb(248, 41, 72);
+  font-weight: 500;
   color: #f7c5cc;
-  box-shadow: #c92e46 0px 1px 4px 1px;
-  transform: translateY(5px);
+  box-shadow: #c92e465e 0px 1px 0px 0px;
+  transform: translateY(2px);
   transition: 200ms;
 }
 
@@ -123,7 +148,9 @@
   /* border-bottom: 0.0825rem solid #FFC500; */
   transition: all 0.4s ease;
 }
-
+.icon{
+  position: relative;
+}
 .countProduct {
   cursor: pointer;
   color: #ededed;
@@ -298,7 +325,7 @@ a.nav-link:hover {
   background-clip: border-box;
   background: #00000083;
   backdrop-filter: blur(0.0625rem);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: .9375rem;
   font-weight: 700;
   -webkit-text-fill-color: #ededed;
@@ -318,6 +345,7 @@ a.nav-link:hover {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
+  filter: drop-shadow(1px 3px 1px #2020205e);
   z-index: 999;
 }
 
@@ -326,46 +354,69 @@ a.nav-link:hover {
   max-height: 80%;
   border-radius: 10px;
   object-fit: contain;
+  position: fixed;
 }
 
 .close-button {
-  position: absolute;
-  top: 60px;
-  right: 600px;
+  position: relative;
+  top: -365px;
+  left: 699px;
   cursor: pointer;
+  text-align: center;
+  width: 70px;
+  height: 70px;
   font-size: 50px;
+  background: #dc14c1d5;
+  border: ridge 1px #db143c;
+  border-radius: 999px;
+  filter: drop-shadow(3px 3px 2px #2020205e);
   color: white;
+  align-self: center;
+  z-index: 1;
+}
+.close-button:hover {
+  transform: scale(1.05);
+  transition: all ease-in-out .2s;
+}
+.close-button:active {
+  transform: scale(0.95);
+  transition: all ease-in-out .2s;
 }
 
 .bigProd2 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   transition: all 0.5s;
-  text-align: end;
+  text-align: center;
+  text-justify: center;
+  text-align-last: center;
   color: #ededed;
   font-weight: 600;
   border-bottom: 0.0625rem solid #908e8eae;
   border-top: 0.0625rem solid #908e8eae;
-  position: fixed;
-  width: 200px;
-  top: 150px;
-  left: 650px;
+  border-radius: 5px 0 5px 0;
+  position: relative;
+  width: 220px;
+  height: fit-content;
+  top: -263px;
+  left: 59px;
+  filter: drop-shadow(1px 3px 1px #2020205e);
   background-color: #ffffff25;
-    backdrop-filter: blur(0.25rem);
-    box-shadow: #00000066 0px 2px 11px, #0000004d 0px 0px 3px 2px, #00000033 4px -50px 16px inset;
-    -webkit-backdrop-filter: blur(1.25rem);
+  backdrop-filter: blur(0.25rem);
+  box-shadow: #00000066 0px 2px 11px, #0000004d 0px 0px 3px 2px, #00000033 4px -50px 16px inset;
+  -webkit-backdrop-filter: blur(1.25rem);
 }
 
 .card-text2 {
   font-size: 1.4rem;
   background-color: #0000008e;
-    backdrop-filter: blur(0.25rem);
-    box-shadow: #00000066 0px 2px 11px, #0000004d 0px 0px 3px 2px, #00000033 4px -50px 16px inset;
-    -webkit-backdrop-filter: blur(1.25rem);
+  backdrop-filter: blur(0.25rem);
+  box-shadow: #00000066 0px 2px 11px, #0000004d 0px 0px 3px 2px, #00000033 4px -50px 16px inset;
+  -webkit-backdrop-filter: blur(1.25rem);
   padding: 10px;
   border-radius: 5px;
   color: #ededed;
   width: 580px;
-  position: fixed;
-  bottom: 100px;
-  left: 662px;
+  position: relative;
+  top: 285px;
+  right: 145px;
 }

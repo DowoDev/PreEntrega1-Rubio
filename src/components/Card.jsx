@@ -8,7 +8,7 @@ const Card = ({ title, description, img, botonPrecio, onImageClick }) => {
 
   return (
     <div className='card'>
-      <div className="image-container" onClick={handleImageClick}>
+      <div className='image-container' onClick={handleImageClick}>
         <img className='imgCoffee' src={img} alt = { title }/>
       </div>
       
@@ -16,7 +16,9 @@ const Card = ({ title, description, img, botonPrecio, onImageClick }) => {
         <p className='bigProd'>{ title }<span className='flavor'> BLEND.</span></p>
         <p className='card-text'>{ description }</p>
         <p className='price'>{ botonPrecio }</p>
-        <button className='botonCompra'> COMPRAR </button>
+        <button className='botonCompra'> 
+          AGREGAR <img className='icon' src='./src/assets/logos/coffee-togo-regular-60.png' alt='Carrito'/> CAFÉ
+        </button>
       </div>
     </div>
   )
