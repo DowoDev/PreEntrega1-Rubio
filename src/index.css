@@ -16,7 +16,7 @@ html {
 }
 #root{
   font-family: 'Poppins', sans-serif;
-  background-image: url(/src/assets/img/gb_any3.jpg);
+  background-image: url(/src/assets/img/bg_any.jpg);
   margin: 0 auto;
   justify-content: none;
   align-items: none;

@@ -27,9 +27,10 @@
   left: 41px;
   width: fit-content;
 }
-.logos{
+
+.logos {
   cursor: pointer;
-  
+
 }
 
 .marca {
@@ -46,6 +47,7 @@
   filter: invert(0);
   transition: all 0.5s;
 }
+
 .greeting h1 {
   color: #ededed;
   text-align: left;
@@ -57,6 +59,7 @@
   filter: drop-shadow(1px 3px 1px #202020);
   transition: all 0.5s;
 }
+
 .greeting h3 {
   color: #ededed;
   text-align: left;
@@ -120,11 +123,11 @@
   border: 0;
   background-color: #ff3856;
   box-shadow: #c92e465e 0px 1px 0px 3px;
-  cursor: pointer;
   filter: drop-shadow(0px 1px 2px #c92e46);
   transition: all .3s ease;
 
 }
+
 .botonCompra:active {
   background-color: rgb(248, 41, 72);
   font-weight: 500;
@@ -136,21 +139,25 @@
 
 .carrito {
   cursor: pointer;
-  left: 1208px;
-  position: absolute;
-  top: 15px;
+  position: relative;
   z-index: 1;
+  top: -0px;
 }
 
 .carrito img:hover {
   transform: scale(1.10);
   transform: rotate(10deg);
-  /* border-bottom: 0.0825rem solid #FFC500; */
   transition: all 0.4s ease;
 }
-.icon{
+
+.icon {
   position: relative;
+  height: 28px;
+  width: 26px;
+  top: -3px;
+  left: 0px;
 }
+
 .countProduct {
   cursor: pointer;
   color: #ededed;
@@ -191,6 +198,7 @@
   font-size: 1rem;
   color: #ededed;
 }
+
 .price {
   font-size: 1.7rem;
   font-weight: 600;
@@ -231,7 +239,8 @@
 }
 
 .card7 .cards .bigProd .flavor {
-  color: #f577b4;;
+  color: #f577b4;
+  ;
   font-weight: 700;
 }
 
@@ -239,6 +248,12 @@
   color: #64d2ee;
   font-weight: 700;
 }
+
+.card9 .cards .bigProd .flavor {
+  color: #f18102;
+  font-weight: 700;
+}
+
 
 button:active {
   transform: scale(0.95);
@@ -249,6 +264,7 @@ a.nav-link {
   font-size: 1.2rem;
   font-weight: 600;
   color: #ededed;
+  padding: 15px 0 0 0;
 }
 
 a.nav-link:hover {
@@ -258,14 +274,24 @@ a.nav-link:hover {
 }
 
 .imgCoffee {
+  cursor: pointer;
   margin: 0;
   padding: 0;
   overflow: hidden;
   position: relative;
   max-width: 100%;
-  border-bottom: 0.0625rem solid #232323ae;
+  border-bottom: 1px solid #232323ae;
   border-radius: 0.3125rem 0.3125rem 0.625rem 0.625rem;
   box-shadow: 0.125rem 0.125rem 3.125rem 0.0625rem #000000;
+}
+
+.swal2-title .imgCoffee2 {
+  width: 220px !important;
+  border-radius: 15px !important;
+  background-color: #0000008e;
+  backdrop-filter: blur(0.25rem);
+  box-shadow: #00000066 0px 2px 11px, #0000004d 0px 0px 3px 2px, #00000033 4px -50px 16px inset;
+  -webkit-backdrop-filter: blur(1.25rem);
 }
 
 .image-container {
@@ -279,12 +305,11 @@ a.nav-link:hover {
 
 .image-container:hover img {
   transform: scale(1.1);
-
 }
 
 .me {
   margin: auto;
-  width: 250px;
+  width: 350px;
 }
 
 .me a img {
@@ -299,6 +324,15 @@ a.nav-link:hover {
   color: #ededed;
 }
 
+.arrowFun {
+  background-color: #fd007aee;
+  border-radius: 50px;
+}
+
+.arrowFun:hover {
+  transform: scale(1.20);
+}
+
 .wow {
   color: #fd007aee;
 }
@@ -310,6 +344,7 @@ a.nav-link:hover {
   left: .625rem;
   z-index: 9;
 }
+
 .arrow:active {
   transform: scale(0.95);
   z-index: 9;
@@ -335,6 +370,7 @@ a.nav-link:hover {
   filter: drop-shadow(0rem 0.0625rem 0.0625rem #fd007a83);
   transition: 0.3s;
 }
+
 .image-modal {
   display: flex;
   justify-content: center;
@@ -350,7 +386,7 @@ a.nav-link:hover {
 }
 
 .image-modal img {
-  max-width: 80%; 
+  max-width: 80%;
   max-height: 80%;
   border-radius: 10px;
   object-fit: contain;
@@ -366,21 +402,103 @@ a.nav-link:hover {
   width: 70px;
   height: 70px;
   font-size: 50px;
-  background: #dc14c1d5;
-  border: ridge 1px #db143c;
+  background: #000000d5;
+  border: ridge 1px #807e7e;
   border-radius: 999px;
   filter: drop-shadow(3px 3px 2px #2020205e);
   color: white;
   align-self: center;
   z-index: 1;
 }
+
 .close-button:hover {
+  background: #db143cef;
+  border: ridge 1px #db143c;
   transform: scale(1.05);
   transition: all ease-in-out .2s;
 }
+
 .close-button:active {
   transform: scale(0.95);
   transition: all ease-in-out .2s;
+}
+
+.swal2-backdrop-show {
+  background: rgba(0, 0, 0, 0.8) !important;
+  filter: drop-shadow(1px 3px 1px #2020205e) !important;
+  z-index: 999 !important;
+}
+
+.swal2-title {
+  position: relative !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 1px !important;
+  color: #ffffff !important;
+  filter: drop-shadow(1px 3px 1px #2020205e) !important;
+}
+
+.swal2-title img {
+  position: relative !important;
+  filter: drop-shadow(1px 3px 1px #2020205e) !important;
+  top: 38px !important;
+}
+
+.swal2-confirm {
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
+  font-family: 'Poppins', sans-serif !important;
+  color: #161616 !important;
+  border-radius: 3px !important;
+  border: 0 !important;
+  transition: all .3s ease !important;
+}
+
+.swal2-cancel {
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
+  font-family: 'Poppins', sans-serif !important;
+  color: #ededed !important;
+  border-radius: 3px !important;
+  border: 0 !important;
+  transition: all .3s ease !important;
+}
+
+.swal2-popup {
+  position: relative !important;
+  box-sizing: border-box !important;
+  grid-template-columns: minmax(0, 100%) !important;
+  width: 32em !important;
+  max-width: 100% !important;
+  padding: 0 0 1.25em !important;
+  border: 1px solid rgba(189, 186, 186, 0.185) !important;
+  border-radius: 15px !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 1rem !important;
+  border-bottom: 0.0625rem solid #908e8e41 !important;
+  border-top: 0.0625rem solid #908e8eae !important;
+  filter: drop-shadow(1px 3px 1px #2020205e) !important;
+  background-color: #ffffff25 !important;
+  backdrop-filter: blur(0.25rem) !important;
+  box-shadow: #00000066 0px 2px 11px, #0000004d 0px 0px 3px 2px, #00000033 4px -50px 16px inset !important;
+  -webkit-backdrop-filter: blur(1.25rem) !important;
+}
+
+.swal2-html-container {
+  padding: 25px 37px 0 27px !important;
+  color: #ededed !important;
+  font-size: 1.875rem !important;
+  font-weight: 600 !important;
+  display: flex !important;
+  flex-wrap: wrap;
+  align-items: center !important;
+  justify-content: space-between !important;
+  flex-direction: column !important;
+  filter: drop-shadow(1px 3px 1px #2020205e) !important;
+}
+
+.swal2-html-container img {
+  position: relative;
 }
 
 .bigProd2 {
@@ -389,7 +507,7 @@ a.nav-link:hover {
   text-align: center;
   text-justify: center;
   text-align-last: center;
-  color: #ededed;
+  color: #ffffff;
   font-weight: 600;
   border-bottom: 0.0625rem solid #908e8eae;
   border-top: 0.0625rem solid #908e8eae;
@@ -408,15 +526,43 @@ a.nav-link:hover {
 
 .card-text2 {
   font-size: 1.4rem;
+  color: #ededed;
   background-color: #0000008e;
   backdrop-filter: blur(0.25rem);
   box-shadow: #00000066 0px 2px 11px, #0000004d 0px 0px 3px 2px, #00000033 4px -50px 16px inset;
   -webkit-backdrop-filter: blur(1.25rem);
   padding: 10px;
   border-radius: 5px;
-  color: #ededed;
   width: 580px;
   position: relative;
   top: 285px;
   right: 145px;
+}
+
+.tooltip-inner{
+  display: flex !important;
+  transition: all 0.5s!important;
+  text-align: center!important;
+  text-justify: center!important;
+  text-align-last: center!important;
+  color: #ededed!important;
+  font-weight: 600!important;
+  border-bottom: 0.0625rem solid #908e8eae!important;
+  border-top: 0.0625rem solid #908e8eae!important;
+  border-radius: 0 0 5px 5px !important;
+  position: relative!important;
+  width: 220px!important;
+  height: fit-content!important;
+  top: 33.5px!important;
+  filter: drop-shadow(1px 3px 1px #2020205e)!important;
+  background-color: #ffffff25!important;
+  backdrop-filter: blur(0.15rem)!important;
+  box-shadow: #00000066 0px 2px 11px, #0000004d 0px 0px 3px 2px, #00000033 4px -50px 16px inset!important;
+  -webkit-backdrop-filter: blur(1.25rem)!important;
+  background-color: rgba(80, 79, 79, 0.557) !important;
+  backdrop-filter: blur(5.25rem) !important;
+  -webkit-backdrop-filter: blur(1.25rem) !important;
+}
+.tooltip-arrow{
+  display: none !important;
 }
