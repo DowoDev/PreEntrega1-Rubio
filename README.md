@@ -5,11 +5,19 @@
 <h2>QINQELA - CoffeeShop | React JS</h2>
 
 
-<img>![216shots_so](https://github.com/DowoDev/PreEntrega1-Rubio/assets/14940646/b2342e3d-8b76-4d7c-8241-7b5ea908150e)</img>
+<img>![image](https://github.com/DowoDev/PreEntrega1-Rubio/assets/14940646/eee41f5f-4208-4d6b-9fc8-99627b25b161)
+</img>
 
-<img>![477shots_so](https://github.com/DowoDev/PreEntrega1-Rubio/assets/14940646/455309f4-ce7d-408f-81dd-78928a0462da)</img>
+<img>![image](https://github.com/DowoDev/PreEntrega1-Rubio/assets/14940646/9ea6f49d-1b9a-4276-adc8-8cc12ff80107)
+</img>
 
-<img>![325shots_so](https://github.com/DowoDev/PreEntrega1-Rubio/assets/14940646/2c0451e9-a830-4a02-93ae-04d1f0e885a3)</img>
+<img>![image](https://github.com/DowoDev/PreEntrega1-Rubio/assets/14940646/9dde3f05-6809-4044-bd55-725775202a99)
+</img>
+
+Detalle Card Productos:
+
+<img>![image](https://github.com/DowoDev/PreEntrega1-Rubio/assets/14940646/2cb3a3b5-1f16-4ad7-99a7-04cd36f80b0f)
+</img>
 
 
 
