@@ -183,7 +183,7 @@
 .cards {
   position: relative;
   text-align: center;
-  border-radius: 0.3125rem;
+  border-radius: 0 0 0.3125rem 0.3125rem;
   transform-origin: center;
   transition: all 0.4s ease-in-out;
   border: 0.0625rem solid #232323ef;
@@ -281,7 +281,7 @@ a.nav-link:hover {
   position: relative;
   max-width: 100%;
   border-bottom: 1px solid #232323ae;
-  border-radius: 0.3125rem 0.3125rem 0.625rem 0.625rem;
+  border-radius: 0.3125rem 0.3125rem 0 0;
   box-shadow: 0.125rem 0.125rem 3.125rem 0.0625rem #000000;
 }
 
@@ -297,14 +297,17 @@ a.nav-link:hover {
 .image-container {
   overflow: hidden;
   position: relative;
+  border-radius: 0.3125rem 0.3125rem 0 0;
 }
 
 .image-container img {
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease;  
 }
 
 .image-container:hover img {
-  transform: scale(1.1);
+  transform: scale(1.50);
+    transition: transform 0.8s ease;
+  
 }
 
 .me {
@@ -555,14 +558,19 @@ a.nav-link:hover {
   height: fit-content!important;
   top: 33.5px!important;
   filter: drop-shadow(1px 3px 1px #2020205e)!important;
-  background-color: #ffffff25!important;
-  backdrop-filter: blur(0.15rem)!important;
   box-shadow: #00000066 0px 2px 11px, #0000004d 0px 0px 3px 2px, #00000033 4px -50px 16px inset!important;
-  -webkit-backdrop-filter: blur(1.25rem)!important;
   background-color: rgba(80, 79, 79, 0.557) !important;
   backdrop-filter: blur(5.25rem) !important;
   -webkit-backdrop-filter: blur(1.25rem) !important;
 }
-.tooltip-arrow{
-  display: none !important;
+.tooltip-arrow::before{
+  position:absolute !important;
+  top: 37px !important;
+  border-radius: 5px !important;
+  border-top-color: #ededed !important;
+  filter: drop-shadow(1px 3px 1px #2020205e)!important;
+  box-shadow: #00000066 0px 2px 11px, #0000004d 0px 0px 3px 2px, #00000033 4px -50px 16px inset!important;
+  background-color: rgba(80, 79, 79, 0.557) !important;
+  backdrop-filter: blur(5.25rem) !important;
+  -webkit-backdrop-filter: blur(1.25rem) !important;
 }
