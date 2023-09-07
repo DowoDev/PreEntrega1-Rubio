@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import Swal from "sweetalert2";
+import React, { useEffect } from 'react';
+import Swal from 'sweetalert2';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 
@@ -37,7 +37,7 @@ const Card = ({ title, description, img, img2, botonPrecio, onImageClick, precio
 
   return (
     <div className='card'>
-      <OverlayTrigger overlay={<Tooltip x-placement="bottom-end" datta-popper-placement="bottom-end" id="tooltip-disabled">Clickeame para agrandarme</Tooltip>}>
+      <OverlayTrigger overlay={<Tooltip x-placement='bottom-end' datta-popper-placement='bottom-end' id='tooltip-disabled'>Clickeame para agrandarme</Tooltip>}>
       <div className='image-container' onClick={handleImageClick}>
         <img className='imgCoffee' src={img} alt = { title }/>
       </div>
