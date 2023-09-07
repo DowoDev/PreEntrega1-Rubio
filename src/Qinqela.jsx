@@ -3,7 +3,7 @@ import './Qinqela.css';
 import Card from './components/Card';
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import CardsDatos from './components/data/Productos';
+import CardsDatos from './components/Data/Productos';
 
 function Qinqela() {
   const [totalPrecio, setTotalPrecio] = useState(0);
