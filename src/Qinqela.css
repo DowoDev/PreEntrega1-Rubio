@@ -227,34 +227,35 @@
 }
 
 .card4 .cards .bigProd .flavor {
-  color: #0064fa;
+  color: #f577b4;
   font-weight: 700;
 }
 
 .card5 .cards .bigProd .flavor {
-  color: #000;
+  color: #0064fa;
+
   font-weight: 700;
 }
 
 .card6 .cards .bigProd .flavor {
-  color: #863804;
-  font-weight: 700;
-}
-
-.card7 .cards .bigProd .flavor {
-  color: #f577b4;
-  ;
-  font-weight: 700;
-}
-
-.card8 .cards .bigProd .flavor {
   color: #64d2ee;
   font-weight: 700;
 }
 
-.card9 .cards .bigProd .flavor {
+.card7 .cards .bigProd .flavor {
   color: #f18102;
   font-weight: 700;
+}
+
+.card8 .cards .bigProd .flavor {
+  color: #863804;
+  font-weight: 700;
+}
+
+.card9 .cards .bigProd .flavor {
+  color: #000;
+  font-weight: 700;
+    filter: drop-shadow(1px 1px 1px #3b3b3b);
 }
 
 

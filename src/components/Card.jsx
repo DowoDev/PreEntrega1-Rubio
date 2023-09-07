@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Swal from "sweetalert2";
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 
-const Card = ({ title, description, img, img2, botonPrecio, onImageClick }) => {
+const Card = ({ title, description, img, img2, botonPrecio, onImageClick, precioSinSimbolo, totalPrecio, setTotalPrecio }) => {
+  useEffect(() => {
+    console.log('Total acumulado en el Carrito: $', totalPrecio);
+  }, [totalPrecio]);
   const handleImageClick = () => {
     if (onImageClick) {
       onImageClick(img);
@@ -21,11 +24,12 @@ const Card = ({ title, description, img, img2, botonPrecio, onImageClick }) => {
       cancelButtonText: 'No, todavía'
     }).then((result) => {
       if (result.isConfirmed) {
+        setTotalPrecio(totalPrecio + precioSinSimbolo);
         Swal.fire(
           `<img className='icon' src='./src/assets/logos/happyCoffee.gif' alt='Carrito'/>`,
           `${title} BLEND\n agregado al carrito!`,
         )
-        console.log(title,'BLEND:', botonPrecio)
+        console.log(title, 'BLEND: $', precioSinSimbolo);
       }
     })
     
