@@ -1,4 +1,6 @@
 .navBarStyle {
+  position: fixed !important;; 
+  top:0 !important;
   margin-top: 0;
   margin-bottom: 0;
   width: 100%;
@@ -9,6 +11,7 @@
   justify-content: space-between;
   align-items: center;
   gap: none;
+  border-bottom: 1px solid #272727ce;
   position: relative;
   background-color: #ffffff13;
   backdrop-filter: blur(1.25rem);
@@ -260,17 +263,30 @@ button:active {
   transition: all 0.1s ease;
 }
 
+div.me-auto.nav-link.navbar-nav{
+  position: relative !important;; 
+  left: 150px !important;
+}
+
 a.nav-link {
-  font-size: 1.2rem;
+  font-size: 1.40rem;
   font-weight: 600;
   color: #ededed;
   padding: 15px 0 0 0;
+  margin: 0 4px 0 0;
 }
 
+a.nav-link:nth-child(2) {
+  font-size: 1.40rem !important;
+  gap: 40px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-bottom: 0.1250rem solid #FFC500;
+  padding: 15px 0 0 0;
+}
 a.nav-link:hover {
-  color: #FFC500;
-  border-bottom: 0.0625rem solid #FFC500;
-  transition: all 0.4s ease;
+  border-bottom: 0.1250rem solid #FFC500;
+  transition: all 0.1s ease;
 }
 
 .imgCoffee {
@@ -543,6 +559,7 @@ a.nav-link:hover {
 }
 
 .tooltip-inner{
+  cursor: pointer;
   display: flex !important;
   transition: all 0.5s!important;
   text-align: center!important;
@@ -564,7 +581,7 @@ a.nav-link:hover {
   -webkit-backdrop-filter: blur(1.25rem) !important;
 }
 .tooltip-arrow::before{
-  position:absolute !important;
+  position: absolute !important;
   top: 37px !important;
   border-radius: 5px !important;
   border-top-color: #ededed !important;

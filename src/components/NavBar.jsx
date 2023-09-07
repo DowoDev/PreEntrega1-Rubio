@@ -22,8 +22,9 @@ function NavBar() {
         </Container>
         <Container>
           <Nav className='me-auto nav-link'>
-            <Nav.Link href='#productos'>PRODUCTOS</Nav.Link>
-            <Nav.Link href='#carrito'>CARRITO</Nav.Link>
+            <Nav.Link href='#productos'>INICIO</Nav.Link>
+            <Nav.Link href='#carrito'>PRODUCTOS</Nav.Link>
+            <Nav.Link href='#carrito'>TU CARRITO</Nav.Link>
             <CartWidget/>
           </Nav>
           

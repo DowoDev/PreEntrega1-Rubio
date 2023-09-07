@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Qinqela.css';
 import Card from './components/Card';
 import NavBar from './components/NavBar';
-import ItemListContainer from './components/itemListContainer/ItemListContainer';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 
 function Qinqela() {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -24,7 +24,7 @@ function Qinqela() {
   return (
     <>
       <NavBar />
-      <br />
+      <br /><br /><br /><br /><br />
       <div className='arrow'>
        <a href="#" title="Back to Top"><img src="./src/assets/logos/up-arrow-alt-regular-24.png" alt="" />UP</a>
       </div>
